@@ -1,0 +1,552 @@
+@font-face {
+  font-family: Gilroy;
+  src: url('/fonts/Gilroyextrabold.ttf')
+}
+
+@font-face {
+  font-family: Gilroy-light;
+  src: url('/fonts/Gilroylight.ttf')
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('/fonts/OpenSans-Light.ttf')
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background-color: #f7e296;
+}
+
+.user-navigation a,
+.site-navigation a {
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.user-navigation a:hover,
+.site-navigation a:hover {
+  opacity: 0.6;
+}
+
+.user-navigation a:focus,
+.site-navigation a:focus {
+  opacity: 0.3;
+}
+
+.search-form {
+  display: flex;
+  box-sizing: border-box;
+  width: 400px;
+  height: 50px;
+}
+
+.user-navigation input {
+  font: inherit;
+  color: #000000;
+
+  background-color: transparent;
+  border: none;
+}
+
+.search-form img {
+  margin-right: 20px;
+}
+
+input[type="search"] {
+  flex-grow: 1;
+}
+
+input[type="search"]:focus {
+  outline: none;
+}
+
+input[placeholder] {
+  opacity: 0.3;
+}
+
+input[placeholder]:hover {
+  opacity: 0.6;
+}
+
+input[placeholder]:focus {
+  opacity: 1;
+}
+
+.user-login {
+  list-style: none;
+}
+
+.login-out {
+  opacity: 0.3;
+}
+.login-out:hover {
+  opacity: 1;
+}
+
+.site-navigation button {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  background-color: transparent;
+  border: none;
+}
+
+.site-navigation button:hover {
+  opacity: 0.6;
+}
+
+.site-navigation button:focus {
+  opacity: 0.3;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+/* MAIN STYLE */
+
+.device-slider h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.slide-button {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 5px;
+
+  display: flex;
+  box-sizing: border-box; 
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  min-height: 40px;
+
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
+  
+}
+
+.slide-button:hover {
+  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+}
+
+.slide-features th {
+  font-family: Gilroy-light, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.slide-features td {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.device-list {
+  list-style: none;
+  display: flex;
+}
+
+.device-item b {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-review ul {
+  list-style: none;
+}
+
+.service-select {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 3px;
+
+  display: flex;
+  box-sizing: border-box; 
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  min-height: 40px;
+
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
+  background-color: #ffffff;
+}
+
+.service-select:hover {
+  color: #f0c52e;
+
+  background-image: none;
+  background-color: #000000;
+}
+
+.service-option h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+}
+
+.brand-list {
+  list-style: none;
+}
+
+.info-block h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about-us-column ul {
+  list-style: none;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.info-block-button {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 5px;
+
+  display: flex;
+  box-sizing: border-box; 
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  min-height: 40px;
+
+  border: none;
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
+}
+
+.info-block-button:hover {
+  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+}
+
+.inner-page h1 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs-current {
+  opacity: 0.6;
+}
+
+.catalog-form ul {
+  list-style: none;
+}
+
+.catalog-form label {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.filters h2,
+.catalog h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filters legend {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.filters fieldset {
+  border: none;
+}
+
+.filter-button {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 5px;
+
+  display: flex;
+  box-sizing: border-box; 
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-height: 40px;
+
+  border: none;
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
+}
+
+.filter-button:hover {
+  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+}
+
+.filter-type-list,
+.filter-arrow {
+  list-style: none;
+}
+
+.filter-type-list a {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.filter-type-list a:hover {
+  opacity: 0.6;
+}
+
+.filter-type-list a:active {
+  opacity: 1;
+}
+
+.inner-catalog-list {
+  list-style: none;;
+}
+
+.catalog-item-title {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-family: Gilroy-light, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.pagination-list {
+  list-style: none;
+
+  background-color: #ebebeb;
+}
+
+.pagination-list a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-item-back a:hover,
+.pagination-item-next a:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-item-back a:active,
+.pagination-item-next a:active {
+  opacity: 0.3;
+  background-color: #d9d9d9;
+}
+
+.pagination-item a {
+  opacity: 0.3;
+}
+
+.pagination-item a:hover {
+  opacity: 0.6;
+}
+
+.pagination-item a:active {
+  opacity: 1;
+}
+
+.pagination-item-current a {
+  opacity: 1;
+}
+
+/* FOOTER STYLE */
+
+footer {
+  background-color: #464646;
+}
+
+footer .login-link,
+footer .user-nav-link,
+footer .user-name {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #c8c8c8;
+}
+
+footer .login-link:hover,
+footer .user-nav-link:hover,
+footer .user-name:hover {
+  opacity: 0.7;
+}
+
+footer .login-link:active,
+footer .user-nav-link:active,
+footer .user-name:active {
+  opacity: 0.3;
+}
+
+.inner-page .login-link {
+  opacity: 0.3;
+}
+
+
+footer address {
+  font-style: normal;
+  color: #c8c8c8;
+}
+
+.footer-service-list a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+.footer-service-list a:hover {
+  opacity: 0.6;
+}
+
+.footer-service-list a:active {
+  opacity: 0.3;
+}
+
+.phone-number {
+  color: #c8c8c8;
+}
+
+.modal-write-us label {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-button {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 5px;
+
+  display: flex;
+  box-sizing: border-box; 
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-height: 40px;
+
+  border: none;
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
+}
+
+.modal-button:hover {
+  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+}

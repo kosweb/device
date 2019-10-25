@@ -293,6 +293,10 @@ input[placeholder]:focus {
   line-height: 20px;
 }
 
+
+/* СЕКЦИЯ "КАТАЛОГ САЙТА" */
+
+
 .device-catalog {
   margin-bottom: 80px;
 }
@@ -313,62 +317,71 @@ input[placeholder]:focus {
 }
 
 .device-item a {
+  display: block;
+
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
   color: #000000;
 }
 
-.device-item a::before {
-  content: '';
-  display: block;
+.svg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 35px;
+
   width: 160px;
   height: 160px;
-  margin-bottom: 35px;
-  padding: 0;
+
   background-color: #f7e296;
 }
 
-.device-item:nth-child(1) a::before {
-  background-image: url('/img/popular-1.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.device-item:nth-child(1) svg {
+  width: 97px;
+  height: 55px;
 }
 
-.device-item:nth-child(2) a::before {
-  background-image: url('/img/popular-2.svg');
-  background-position: 50% 43px;
-  background-repeat: no-repeat;
+.device-item:nth-child(2) svg {
+  width: 86px;
+  height: 117px;
+
+  margin-top: auto;
 }
 
-.device-item:nth-child(3) a::before {
-  background-image: url('/img/popular-3.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.device-item:nth-child(3) svg {
+  width: 71px;
+  height: 87px;
 }
 
-.device-item:nth-child(4) a::before {
-  background-image: url('/img/popular-4.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.device-item:nth-child(4) svg {
+  width: 107px;
+  height: 65px;
 }
 
-.device-item:nth-child(5) a::before {
-  background-image: url('/img/popular-5.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.device-item:nth-child(5) svg {
+  width: 56px;
+  height: 98px;
 }
 
-.device-item:nth-child(6) a::before {
-  background-image: url('/img/popular-6.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.device-item:nth-child(6) svg {
+  width: 132px;
+  height: 69px;
 }
 
-.device-item:hover a::before {
+.device-item:hover .svg-wrapper {
   background-color: #f0c52e;
 }
+
+.device-item a:active svg,
+.device-item a:active span {
+  opacity: .3;
+}
+
+
+/* СЕКЦИЯ "ДОСТАВКА/ГАРАНТИЯ/КРЕДИТ/" */
+
 
 .services-review {
   margin-bottom: 100px;
@@ -399,6 +412,10 @@ input[placeholder]:focus {
   font-weight: 800;
   font-size: 47px;
 }
+
+
+/* СЕКЦИЯ "БРЕНДЫ" */
+
 
 .brands {
   margin-bottom: 100px;

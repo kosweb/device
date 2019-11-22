@@ -38,6 +38,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0 );
+  overflow: hidden;
+}
+
 .button {
 	display: block;
 	position: relative;
@@ -49,7 +72,6 @@ a {
 	line-height: 40px;
   font-size: 18px;
   text-align: center;
-  vertical-align: middle;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #000;
@@ -143,7 +165,7 @@ a {
   display: flex;
   box-sizing: border-box;
 
-  margin-right: 140px;
+  margin-right: 100px;
 
 	width: 440px;
 	height: 50px;
@@ -158,7 +180,8 @@ a {
 }
 
 .search-form img {
-  margin-right: 20px;
+	margin-right: 20px;
+	width: 16px;
 }
 
 .search-form input[type="search"] {
@@ -339,7 +362,7 @@ a {
 	padding-right: 65px;
 	padding-bottom: 20px;
 	background-repeat: no-repeat;
-	background-position: 10% 0px;
+	background-position: 10%;
 }
 
 .slider-selfie {
@@ -735,7 +758,7 @@ a {
   color: #000;
 }
 
-.user-name {
+.inner-page .login-link {
   margin-right: 20px;
 }
 
@@ -863,7 +886,6 @@ a {
 
 .filter-arrow {
   display: flex;
-
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -894,24 +916,31 @@ a {
 
 .filters {
   width: 270px;
-  margin-left: 60px;
+	margin-left: 60px;
+	padding-top: 85px;
 }
 
-.filter-color ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.filter-price::before,
+.filter-color::before,
+.filter-bluetooth::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 200px;
+	height: 2px;
+	background-color: #000;
 }
 
+.filter-color ul,
 .filter-bluetooth ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .filters legend {
+	margin-bottom: 25px;
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -920,18 +949,66 @@ a {
 }
 
 .filters fieldset {
-  margin: 0;
+	position: relative;
+	margin: 0;
+	margin-bottom: 50px;
   padding: 0;
   border: none;
 }
 
-.filter-button {
-  background-image: linear-gradient(to bottom, #efefef 40%, #f0c52e 40%, #f0c52e 60%, #efefef 60%);
+.filter-option {
+	min-height: 25px;
+	margin-bottom: 15px;
+	color: #000;
 }
 
-.filter-button:hover {
-  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+.filter-option:last-child {
+	margin-bottom: 0;
 }
+
+.filter-option label {
+	position: relative;
+	display: block;
+	line-height: 25px;
+	padding-left: 40px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.filter-option label::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+}
+
+.filter-color label::before {
+	background: url('/img/checkbox-off.svg') no-repeat 0 50%;
+}
+
+.filter-bluetooth label::before {
+	background: url('/img/radio-off.svg') no-repeat 0 50%;
+}
+
+.filter-input-checkbox:checked + label::before {
+	background: url('/img/checkbox-on.svg') no-repeat 0 50%;
+}
+
+.filter-input-radio:checked + label::before {
+	background: url('/img/radio-on.svg') no-repeat 0 50%;
+}
+
+.filter-input:hover + label::before {
+	opacity: 0.6;
+}
+
+.filter-input:active + label::before {
+	opacity: 1;
+}
+
+
 
 
 /* SECTION CATALOG */
@@ -1048,24 +1125,17 @@ a {
   align-items: center;
 }
 
-
 .pagination-list {
   display: flex;
   align-items: center;
-
   width: 760px;
   min-height: 65px;
   margin: 0;
   margin-left: 70px;
   margin-bottom: 70px;
   padding: 0;
-
   list-style: none;
-
   background-color: #ebebeb;
-}
-
-.pagination-list li {
 }
 
 .pagination-item-back {
@@ -1129,7 +1199,6 @@ footer {
   margin-top: 80px;
   padding-top: 65px;
   padding-bottom: 65px;
-
   background-color: #464646;
 }
 
@@ -1197,10 +1266,6 @@ footer .user-name:active {
 
 footer .user-login {
   margin-right: 0;
-} 
-
-.inner-page .login-link {
-  opacity: 0.3;
 }
 
 .footer-mid {
@@ -1263,7 +1328,6 @@ footer .user-login {
   justify-content: center;
   align-items: center;
 
-  line-height: 0px;
 }
 
 .footer-bot::before {

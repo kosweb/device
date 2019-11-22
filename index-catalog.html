@@ -25,14 +25,29 @@
 
           <ul class="user-login">
             <li>
-              <a href="#" class="user-name">Валентин Петухов</a>
+              <a href="#" class="login-link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+									<path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+								</svg>
+								Валентин Петухов
+							</a>
             </li>
             <li>
               <a href="#" class="login-out">Выйти</a>
             </li>
           </ul>
-          <a href="#" class="user-nav-link compare-link">Сравнить</a>
-          <a href="#" class="user-nav-link cart-link">Корзина</a>
+          <a href="#" class="user-nav-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+							<path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+						</svg>
+						Сравнить
+					</a>
+          <a href="#" class="user-nav-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+							<path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+						</svg>
+						Корзина
+					</a>
         </section>
 
         <div class="site-navigation">
@@ -143,26 +158,24 @@
             <fieldset class="filter-color">
               <legend>Цвет</legend>
               <ul>
-                <li>
-                  <label for="black-color">
-                    <input type="checkbox" class="filter-input-checkbox" name="black" id="black-color" checked>
-                    Черный</label>
+                <li class="filter-option">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" id="black-color" checked>
+                  <label for="black-color">Черный</label>
                 </li>
-
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox" name="white" id="white-color">
+                <li class="filter-option">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="white" id="white-color">
                   <label for="white-color">Белый</label>
                 </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox" name="blue" id="blue-color" checked>
+                <li class="filter-option">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="blue" id="blue-color" checked>
                   <label for="blue-color">Синий</label>
                 </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox" name="red" id="red-color" checked>
+                <li class="filter-option">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="red" id="red-color" checked>
                   <label for="red-color">Красный</label>
                 </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox" name="pink" id="pink-color">
+                <li class="filter-option">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pink" id="pink-color">
                   <label for="pink-color">Розовый</label>
                 </li>
               </ul>
@@ -171,13 +184,12 @@
             <fieldset class="filter-bluetooth">
               <legend>Bluetooth</legend>
               <ul>
-                <li>
-                  <input type="radio" class="filter-input-radio" name="yes" id="yes-radio" checked
-                  >
+                <li class="filter-option">
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" name="no" id="yes-radio" checked>
                   <label for="yes-radio">Есть</label>
                 </li>
-                <li>
-                  <input type="radio" class="filter-input-radio" name="no" id="no-radio">
+                <li class="filter-option">
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" name="no" id="no-radio">
                   <label for="no-radio">Нет</label>
                 </li>
               </ul>
